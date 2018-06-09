@@ -76,3 +76,41 @@ k			//光标向上
 q			//退出
 ctrl+L		//清屏
 touch abc.txt   //创建abc.txt文件
+
+## 本地分支版本回退的方法
+
+https://blog.csdn.net/fuchaosz/article/details/52170105
+
+如果你在本地做了错误提交，那么回退版本的方法很简单 
+先用下面命令找到要回退的版本的commit id：
+
+```
+git reflog 1
+```
+
+接着回退版本:
+
+```
+git reset --hard Obfafd1
+```
+
+0bfafd就是你要回退的版本的commit id的前面几位
+
+## 自己的远程分支版本回退的方法
+
+如果你的错误提交已经推送到自己的远程分支了，那么就需要回滚远程分支了。 
+首先要回退本地分支：
+
+```
+git reflog
+git reset --hard Obfafd12
+```
+
+紧接着强制推送到远程分支：
+
+```
+git push -f1
+```
+
+**注意：本地分支回滚后，版本将落后远程分支，必须使用强制推送覆盖远程分支，否则无法推送到远程分支**
+
