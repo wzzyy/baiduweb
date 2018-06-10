@@ -1,0 +1,6 @@
+p span {
+  margin-right: 10px;
+}
+p span>span {
+  font-weight: bold;
+}
