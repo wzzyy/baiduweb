@@ -1,0 +1,176 @@
+
+/* 重置样式 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* 通用样式 */
+.xiankuan {
+    margin: 0 auto;
+    width: 960px;
+    /* border: 1px solid red; */
+}
+/* header */
+.topbar {
+    height: 80px;
+    background: #323534;
+}
+
+.logo {
+    /* 为了能给a标签加上宽度 */
+    width: 100px;
+    font: 24px/80px 微软雅黑;
+}
+.logo,
+.logo + ul  a {
+    color: #fff;
+}
+
+.logo + ul {
+    margin-top: 5px;
+    width: 850px;
+    vertical-align: top;
+    text-align: right;
+    font-size: 10px;
+}
+
+.logo + ul  a {
+     text-decoration: underline;
+}
+
+.top-bg {
+    height: 300px;
+    background: #3DBD42;
+}
+
+.xk {
+    background: #3DBD42;
+
+}
+
+.xk ul {
+    text-align: right;
+}
+.xk li {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgba(255, 255, 255, 0.63);
+}
+
+.xk li:nth-of-type(2) {
+    height: 40px;
+    line-height: 40px;
+    vertical-align: bottom;
+}
+
+
+.xuanxiangka {
+    margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 0;
+}
+.xuanxiangka li {
+    font-size: 16px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-radius: 15px 15px 0 0;
+    background: #EFEEEC;
+}
+.xuanxiangka li a {
+    margin: 15px;
+}
+/* 不用定位的话,实在不知道怎么把下面那根线隐藏了 */
+.xuanxiangka li:nth-of-type(1),
+.xk li:nth-of-type(2) {
+    /* border-bottom: 1px solid #eee; */
+    background-color: #fff;
+}
+
+
+.xuanxiangka li a {
+    color: black;
+}
+/* 内容区 */
+.container {
+    margin-top: 10px;
+}
+
+.item {
+    margin: 10px 0;
+    font-size: 0;
+}
+
+.item div {
+    height: 200px;
+    line-height: 200px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+.row1 div:nth-of-type(1) {
+    width: 400px;
+}
+
+.row1 div:nth-of-type(2) {
+    margin: 0 10px;
+    width: calc(100% - 726px);
+}
+
+.row1 div:nth-of-type(3) {
+    width: 300px;
+}
+
+.row2 div {
+    margin-right: 10px;
+    box-sizing: border-box;
+    width: calc((100% - 30px) / 4);
+}
+.row2 div:last-child,
+.row3 div:last-child {
+    margin-right: 0;
+}
+
+.row3 div {
+    margin-right: 10px;
+    box-sizing: border-box;
+    width: calc((100% - 20px) / 3);
+}
+
+
+/* footer */
+footer {
+    padding-top: 10px;
+    height: 90px;
+    vertical-align: top;
+    background: #666560;
+    color: #fff;
+}
+
+/* 整理 */
+.logo + ul li,
+.xk li,
+.xuanxiangka li,
+.xuanxiangka li a,
+.item div,
+.logo,
+.logo + ul {
+    display: inline-block; 
+}
+
+.xk li,
+.xuanxiangka li,
+.item div,
+footer {
+    text-align: center;
+}

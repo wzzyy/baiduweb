@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>布局实战</title>
+    <!-- <link rel="stylesheet" href="putong.css"> -->
+    <!-- <link rel="stylesheet" href="pandfloat.css"> -->
+    <link rel="stylesheet" href="flex.css">
+</head>
+<body>
+    <header >
+        <div class="topbar">
+            <div class="xiankuan clearfix">
+                <a class="logo" href="##" title="logo">Logo</a>
+                <ul class="fr">
+                    <li class="fl"><a href="##">Github</a></li>
+                    <li class="fl"><a href="##">Register</a></li>
+                    <li class="fl"><a href="##">Login</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 下面这一段,我本来是放在container里面的,但是这样做以后, 里面的所有item都要增加xiankuan样式 -->
+        <!-- top-bg我在putong.css中和1234分开了.实在想不到怎么定位了.这里可以不用. -->
+        <!-- <div class="top-bg"></div> -->
+        <div class="xk">
+            <div class="xiankuan clearfix">
+                <ul >
+                    <li class="fl">1</li>
+                    <li class="fl">2</li>
+                    <li class="fl">3</li>
+                    <li class="fl">4</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="xuanxiangka">
+        <div class="xiankuan">
+            <ul class="clearfix">
+                <li class="fl"><a href="##">HOME</a></li>
+                <li class="fl"><a href="##">PROFILE</a></li>
+                <li class="fl"><a href="##">ABOUT</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="items  xiankuan">
+            <div class="row1 item clearfix">
+                <div>This is Content 1</div>
+                <div>This is Content 2</div>
+                <div>This is Content 3</div>
+            </div>
+            <div class="row2 item clearfix">
+                <div>Content4</div>
+                <div>Content5</div>
+                <div>Content6</div>
+                <div>Content7</div>
+            </div>
+            <div class="row3 item clearfix">
+                <div>Content8</div>
+                <div>Content9</div>
+                <div>Content10</div>
+            </div>
+        </div>
+    </div>        
+    <footer>
+        <div class="xiankuan">
+            <span>&copy;2018 ife.baidu.com</span>
+        </div>
+    </footer>
+</body>
+</html>

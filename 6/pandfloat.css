@@ -1,0 +1,177 @@
+/* float position布局 */
+/* 清除默认样式 */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+    }
+
+/* 公共样式 */
+    /* 清除浮动 */
+    .clearfix::after,
+    .clearfix::before {
+        content: "";
+        height: 0;
+        display: block;
+        clear: both;
+    }
+
+    /* 浮动 */
+    .fl {
+        float: left;
+    }
+
+    .fr {
+        float: right;
+    }
+
+    .xiankuan {
+        margin: 0 auto;
+        width: 960px;
+    }
+
+/* 正文样式 */
+/* 头部 */
+.topbar {
+    height: 80px;
+    background-color: #323534;
+}
+
+header a {
+    color: #fff;
+}
+
+.logo {
+    font: 2em/80px 微软雅黑;
+}
+
+.topbar ul {
+    margin-top: 5px;
+}
+
+.topbar li {
+    margin-right: 10px;
+    text-align: center;
+}
+
+.topbar li:last-child {
+    margin-right: 0;
+}
+
+.topbar li a {
+    text-decoration: underline;
+}
+
+.xk {
+    height: 400px;
+    background-color: #3DBD42;
+}
+
+.xk > div {
+    position: relative;
+    height: 100%;
+} 
+.xk ul {
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+}
+.xk li {
+    margin-left: 10px;
+    width: 20px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: bottom;
+    border: 1px solid #000;
+    background-color: rgba(255, 255, 255, 0.405);
+}
+
+.xk li:nth-of-type(2) {
+
+    background-color: #fff;
+}
+/* 导航区域 */
+.xuanxiangka {
+    margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.xuanxiangka li {
+    box-sizing: border-box;
+    margin-bottom: -1px;
+}
+
+.xuanxiangka li a {
+    display: inline-block;
+    padding: 5px 10px;
+    
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 14px 14px 0 0;
+    background-color: #EFEEEC;
+    color: #000;
+}
+
+.xuanxiangka li:first-child a {
+    /* margin-bottom: -1px; */
+    border-bottom: 1px solid transparent;
+    background-color: #fff;
+}
+
+/* 主要内容 */
+.items {
+    text-align: center;
+}
+.item {
+    margin: 10px 0;
+}
+.item > div {
+    /* 为了方便,浮动写这里了 */
+    float: left;
+    box-sizing: border-box;
+    margin-right: 10px;
+    height: 200px;
+    line-height: 200px;
+    border: 1px solid #ccc;
+}
+
+.row1 div:last-child,
+.row2 div:last-child,
+.row3 div:last-child {
+    margin-right: 0;
+}
+
+/* row1 左右定款, 中间响应 */
+.row1 div:nth-of-type(1) {
+    width: 250px;
+}
+.row1 div:nth-of-type(2) {
+    width: calc(100% - 470px);
+}
+.row1 div:nth-of-type(3) {
+    width: 200px;
+}
+/* row2 平均分布, 要计算margin-right 30px, 减号前后要空格 */
+.row2 div {
+    width: calc((100% - 30px) / 4);
+}
+/* row3同row2 */
+.row3 div {
+    width: calc((100% - 20px) / 3);
+}
+
+/* footer */
+footer {
+    padding-top: 10px;
+    height: 140px;
+    background-color: #666560;
+    text-align: center;
+    color: #fff;
+}
