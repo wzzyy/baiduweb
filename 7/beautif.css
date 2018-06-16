@@ -1,3 +1,5 @@
+/* 样式重置 */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +10,7 @@ a {
     text-decoration: none;
     color: #000;
 }
+
 input,
 button {
     border: 1px solid rgba(114, 114, 114, 0.616);
@@ -18,6 +21,7 @@ li {
 }
 
 /* 公共类 */
+
 body {
     font-size: 1em;
     /* 相似字体 */
@@ -25,37 +29,48 @@ body {
     /* 为了让图片变黑,所以这里加了黑色背景,图片则设置为有透明度 */
     background-color: #000;
 }
+
 body * {
     font-weight: 100;
 }
+
 .xiankuan {
     margin: 0 auto;
     width: 1030px;
 }
+
 .text-center {
     text-align: center;
 }
+
 .text-left {
     text-align: left;
 }
+
 .clearfix::after {
     content: "";
     display: block;
-    clear:  both;
+    clear: both;
 }
+
 .fl {
     float: left;
 }
-.fr {
-    float: right;
+
+h2 {
+    font-size: 2.8em;
+}
+
+p {
+    font-size: 1.06em;
+    line-height: 1.7;
 }
 
 /* header */
+
 header {
     min-width: 1030px;
     height: 990px;
-    color: #fff;
-    border: 1px solid transparent;
 }
 
 header > img {
@@ -69,19 +84,19 @@ header > img {
 
 h1 {
     margin-top: 110px;
-    font-size: 4em; 
+    font-size: 4em;
 }
+
 .title p {
     margin: 0 auto;
     margin-top: 87px;
     /* 用padding来让文字居中 */
     padding: 0 160px;
-    line-height: 1.7;
     color: #ccc;
     font-size: 1.3em;
 }
 
-.title > div {
+.title>div {
     margin: 0 auto;
     margin-top: 104px;
     height: 250px;
@@ -92,79 +107,81 @@ h1 {
     margin-top: 60px;
     letter-spacing: 3px;
 }
+
 .title h6 {
     margin-top: 20px;
-    letter-spacing: 2px;
     margin-bottom: 45px;
     color: #ccc;
 }
+
 .sign input {
     margin-right: 30px;
     padding-left: 20px;
     width: 290px;
     height: 50px;
-    background-color: transparent;
 }
-.sign input:-moz-placeholder { color: #fff; }
-::-webkit-input-placeholder { color:#ccc; }
+
+.sign input:-moz-placeholder {
+    color: #fff;
+}
+
+::-webkit-input-placeholder {
+    color: #ccc;
+}
 
 .sign button {
     width: 125px;
     height: 50px;
-    background-color: #fff;
 }
-
 
 /* main */
+
 .main > div {
+    /* 两个作用,添加视觉效果的横线,防止子元素margin-top把父元素也顶下来 */
     border-top: 1px solid #ccc;
 }
-.team-1 {
-    background-color: #fff;
-}
+
 .team-1 > div {
     margin-top: 89px;
 }
-.team-1 > div > h5{
+
+.team-1 > div > h5 {
     margin-bottom: 40px;
-    font-weight: bold;
-    letter-spacing: 2px;
     font-size: 1.03em;
 }
+
 .team-1 h2 {
     margin: 0 auto;
     margin-bottom: 86px;
     width: 700px;
-    font-size: 3em;
 }
+
 .team-1 li {
     float: left;
     margin-right: 158px;
     padding-left: 70px;
-    width: 436px; 
+    width: 436px;
     height: 200px;
-    list-style-type: none;
 }
-.team-1 li > h6 {
+
+.team-1 li > h3 {
     margin-bottom: 20px;
     font-size: 1.4em;
-    font-weight: bold;
-}
-.team-1 li > h6 + p {
-    line-height: 1.7;
-    font-size: 1.06em;
 }
 
 .team-1 li:nth-of-type(1) {
     background: url(./img/1_0001s_0001s_0000s_0000_Iphone-Icon.png) no-repeat 16px 0;
 }
+
 .team-1 li:nth-of-type(2) {
     margin-right: 0;
     background: url('./img/1_0001s_0001s_0002s_0001_Check-Icon.png') no-repeat 12px 0;
 }
+
 .team-1 li:nth-of-type(3) {
     background: url('./img/1_0001s_0001s_0001s_0000_Pencil-Icon.png') no-repeat;
 }
+
 .team-1 li:nth-of-type(4) {
     margin-right: 0;
     background: url('./img/1_0001s_0001s_0003s_0000_Settings-Icon.png') no-repeat;
@@ -173,7 +190,6 @@ h1 {
 .item-2 {
     position: relative;
     height: 800px;
-    color: #fff;
 }
 
 .item-2 > img {
@@ -188,27 +204,24 @@ h1 {
     margin-top: 182px;
     margin-bottom: 42px;
     width: 400px;
-    font-size: 3em;
 }
+
 .item-2 p {
     margin-bottom: 56px;
     width: 400px;
-    line-height: 1.7;
     font-size: 1.2em;
     color: #ddd;
 }
+
 .item-2 button {
     width: 240px;
     height: 60px;
 }
+
 .item-2 button:nth-of-type(1) {
     margin-right: 30px;
     background: #fff;
     color: #000;
-}
-.item-2 button:last-child {
-    background-color: transparent;
-    color: #fff;
 }
 
 .right-photo {
@@ -216,6 +229,7 @@ h1 {
     right: 0;
     top: calc((100% - 542px) / 2);
 }
+
 .right-photo span {
     position: absolute;
     top: calc((100% - 10px) / 2);
@@ -225,6 +239,7 @@ h1 {
     border-radius: 50%;
     border: 1px solid #fff;
 }
+
 .right-photo img {
     padding: 30px 0 30px 60px;
     border-top: 2px solid #ccc;
@@ -235,126 +250,128 @@ h1 {
 
 .item-3 {
     height: 580px;
-    background-color: #fff;
 }
+
 .item-3 > div {
     margin-top: 80px;
 }
-.item-3 h2 {
-    font-size: 3em;
-}
+
 .item-3 ul {
     margin-top: 85px;
 }
+
 .item-3 li {
     padding: 0 45px;
     width: 33%;
 }
+
 .item-3 h3 {
     margin-bottom: 40px;
-}
-.item-3 p {
-    line-height: 1.7;
-    font-size: 1.06em;
 }
 
 .item-4 {
     background: #fff;
 }
+
 .item-4 ul {
     margin-top: 114px;
 }
-.item-4 h6 {
+
+.item-4 h3 {
     font-size: 1.4em;
-    font-weight: bold;
     line-height: 1.5em;
 }
-.item-4 li{
+
+.item-4 li {
     display: inline-block;
     margin-bottom: 80px;
     height: 350px;
     overflow: hidden;
     vertical-align: middle;
-    
 }
+
 .item-4 img {
     width: 570px;
 }
 
 .item-4 li:nth-of-type(2) {
-     margin-left: 120px;
-    padding-top: 70px;     
-     width: 305px;
+    margin-left: 120px;
+    padding-top: 70px;
+    width: 305px;
 }
+
 .item-4 li:nth-of-type(3) {
     margin-right: 120px;
     padding-top: 70px;
     width: 305px;
 }
+
 .item-4 p {
     margin-top: 36px;
-    font-size: 1.06em;
-    line-height: 1.7;
 }
 
 .item-5 {
     height: 1080px;
     background: #fff;
 }
+
 .item-5 > div {
     margin-top: 97px;
 }
-.item-5 h2 {
-    font-size: 2.8em;
-}
+
 .item-5 h2 + p {
     margin-top: 35px;
     margin-bottom: 64px;
     padding: 0 calc((100% - 700px) / 2);
     font-size: 1.2em;
-    line-height: 1.7;
 }
+
 .item-5 li {
     margin: 0 20px;
     float: left;
     width: 475px;
     height: 342px;
 }
+
 .item-5 li:hover {
     cursor: pointer;
 }
 
 .item-5 li:nth-of-type(1) {
     margin-bottom: 40px;
-    color: #fff;
     background: url(./img/1_0005s_0001s_0000s_0002_张思远大.png) no-repeat 100%;
 }
+
 .item-5 li:nth-of-type(2) {
     margin-bottom: 40px;
     background: url(./img/1_0005s_0001s_0001s_0000_2.png) no-repeat 100%;
 }
+
 .item-5 li:nth-of-type(3) {
     background: url(./img/1_0005s_0001s_0002s_0000_3.png) no-repeat 100%;
 }
+
 .item-5 li:nth-of-type(4) {
     background: url(./img/1_0005s_0001s_0003s_0000_沈大师大_meitu_3.png) no-repeat 100%;
 }
 
-.item-5 li > div{
+.item-5 li > div {
     padding-top: 110px;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.544);
 }
-.item-5 li > div > h5 {
+
+.item-5-h5 {
     font-size: 1.3em;
-    font-weight: bold;
 }
-.item-5 li > div > p {
+
+.item-5-h5 + p {
     margin-top: 20px;
     margin-bottom: 38px;
     color: #ccc;
 }
+
 .item-5 span {
     margin-right: 30px;
     display: inline-block;
@@ -365,33 +382,36 @@ h1 {
     vertical-align: middle;
     line-height: 57px;
 }
+
 .item-5 span:last-child {
     margin-right: 0;
 }
 
 .item-6 {
     height: 700px;
-    background-color: #fff;
 }
+
 .item {
     margin-top: 70px;
 }
+
 .item h4 {
     margin-bottom: 30px;
     font-size: 1.1em;
-    letter-spacing: 2px;
-    font-weight: bold;
 }
+
 .item > div {
     display: inline-block;
 }
+
 .form {
     padding: 50px;
     margin-right: 128px;
     width: 470px;
     height: 560px;
-    border: 1px solid  #ccc;
+    border: 1px solid #ccc;
 }
+
 .form input,
 .form textarea {
     margin-bottom: 30px;
@@ -400,75 +420,71 @@ h1 {
     height: 50px;
     border: 1px solid #ccc;
 }
+
 .form textarea {
-    padding: 20px; 
+    padding: 20px;
     height: 144px;
     resize: none;
 }
+
 .form button {
     width: 100%;
     height: 50px;
     background-color: #000;
-    color: #fff;
 }
 
 .contact {
     padding-top: 87px;
     width: 360px;
 }
-.contact h2 {
-    font-size: 2.8em;
-}
+
 .contact > p {
     margin-top: 40px;
     margin-bottom: 72px;
-    font-size: 1.06em;
-    line-height: 1.7;
 }
 
 .contact li {
     margin-bottom: 36px;
     text-indent: 40px;
-    font-size: 1.06em;
-    font-weight: bold;
     line-height: 1.7;
 }
-.contact li > p {
-    font-size: 1.06em;
-    font-weight: bold;
-}
+
 .contact li:nth-of-type(1) {
-    background: url(./img/1_0006s_0001s_0002s_0000_Map-Icon.png) no-repeat 0 14px;;
+    background: url(./img/1_0006s_0001s_0002s_0000_Map-Icon.png) no-repeat 0 14px;
+    ;
 }
+
 .contact li:nth-of-type(2) {
-    background: url(./img/1_0006s_0001s_0001s_0000_Phone-Icon.png)  no-repeat 0 3px;
+    background: url(./img/1_0006s_0001s_0001s_0000_Phone-Icon.png) no-repeat 0 3px;
 }
+
 .contact li:nth-of-type(3) {
     background: url(./img/1_0006s_0001s_0000s_0000_Mail-Icon.png) no-repeat 0 2px;
 }
 
 /* footer */
+
 footer {
     height: 410px;
-    border: 1px solid transparent;
 }
+
 footer ul {
     margin-top: 90px;
 }
+
 footer li {
     float: left;
     width: 264px;
 }
-footer li:nth-of-type(1){
+
+footer li:nth-of-type(1) {
     margin-left: calc((100% - 264px * 4) / 2);
 }
-footer h4 {
-    color: #fff;
-    letter-spacing: 2px;
-}
+
 footer li p {
-    margin: 34px 0;    
+    margin: 34px 0;
 }
+
 footer p > a {
     color: rgba(170, 170, 170, 0.644);
 }
@@ -476,5 +492,47 @@ footer p > a {
 footer div a {
     margin-right: 16px;
 }
+
 /* 组合 */
 
+header,
+footer {
+    border: 1px solid transparent;
+}
+
+header,
+.item-2,
+.item-2 button:last-child,
+.item-5 li:nth-of-type(1),
+.form button,
+footer h4 {
+    color: #fff;
+}
+
+.sign button,
+.team-1,
+.item-3,
+.item-6 {
+    background-color: #fff;
+}
+
+.title h6,
+.team-1 > div > h5,
+.item h4,
+footer h4 {
+    letter-spacing: 2px;
+}
+
+.team-1 li > h3,
+.item-4 h3,
+.item-5-h5,
+.item h4,
+.contact li,
+.contact li>p {
+    font-weight: bold;
+}
+
+.sign input,
+.item-2 button:last-child {
+    background-color: transparent;
+}
