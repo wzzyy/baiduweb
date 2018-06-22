@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>时间的问候</title>
+    <style>
+        p {
+            margin-left: 50px;
+
+            display: inline-block;
+            font-size: 4em;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>朋友</p>
+        <p id="value"></p>
+    </div>
+    <script>
+        
+    // 创建时间对象
+    let time = new Date();
+
+    // 获取当前时间
+    let a = time.getHours();
+
+    let val = document.getElementById("value");    
+    if(a <= 12 && a > 7) {
+        val.innerHTML = "上午好";
+    }else if(a > 0 && a <= 7) {
+        val.innerHTML = "好梦";
+    }else {
+        val.innerHTML = "下午好";
+    }
+    // console.log(typeof(a));
+    </script>
+</body>
+</html>
